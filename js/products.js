@@ -25,7 +25,7 @@ productList.push({
 productList.push({
     name: 'Aceite de Oliva Comun San Agustin',
     price: 650,
-    img: './img/productos/aceite_de_oliva_san_agustin.jpg',
+    img: './img/productos/aceite-san-agustin.jpg',
     id: 3,
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut id atque saepe perferendis blanditiis obcaecati officia molestiae repudiandae assumenda debitis maxime alias nobis, ipsa vel vero sint porro dolorem.'
 });
