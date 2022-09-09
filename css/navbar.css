@@ -99,6 +99,7 @@ a {
   color: #FFB74E;
 }
 
+/* CARRITO DE COMPRAS */
 .navbar-shopping-cart {
   position: relative;
   cursor: pointer;
@@ -116,6 +117,84 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.product-detail {
+  width: 360px;
+  background: #ffffff;
+  padding: 24px;
+  box-sizing: border-box;
+  position: fixed;
+  right: 31px;
+  top: 128px;
+  z-index: 9999999;
+}
+.title-container {
+  display: flex;
+}
+.title-container img {
+  transform: rotate(180deg);
+  margin-right: 14px;
+}
+.title {
+  font-size: var(--lg);
+  font-weight: bold;
+}
+.order {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  background-color: var(--text-input-field);
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+.order p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.order p span:nth-child(1) {
+  font-size: var(--md);
+  font-weight: bold;
+}
+.order p:nth-child(2) {
+  text-align: end;
+  font-weight: bold;
+}
+.shopping-cart {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.shopping-cart figure {
+  margin: 0;
+}
+.shopping-cart figure img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.shopping-cart p:nth-child(2) {
+  color: var(--very-light-pink);
+}
+.shopping-cart p:nth-child(3) {
+  font-size: var(--md);
+  font-weight: bold;
+}
+.primary-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
 }
 
 /* BOTON WHATSAPP FLOTANTE */
@@ -140,3 +219,8 @@ a {
 .whatsapp:hover {transition:all .3s; transition-duration: 1s;  filter: opacity(.5);}
 
 
+/* @media (max-width: 640px) {
+  .product-detail {
+    width: 100%;
+  }
+} */
