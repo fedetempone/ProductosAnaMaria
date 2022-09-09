@@ -1,0 +1,185 @@
+@import url("./como-comprar/comprar.css");
+
+@media (max-width: 950px) {
+
+  /* Menu */
+  body {
+    padding-top: 86px;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #3A4460;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  .menu li {
+    padding: 0;
+  }
+
+  .menu a {
+    color: white;
+    line-height: 60px;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 20px 15px;
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .img-logo {
+    height: 65px;
+    width: 85px;
+  }
+
+  .close-icon {
+    padding: 8px 1px 0px 3px;
+  }
+
+  /* ARTICLE */
+
+  .promo-mobile {
+    height: 230px;
+    width: 440px;
+  }
+
+  #article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-products {
+    height: 195px;
+    width: 220px;
+  }
+
+  /* LOGO FOOTER */
+  #logo-footer {/*section*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logoFooter img {/*class*/
+    height: 100px;
+    width: 100px;
+  }
+
+  /* SECCION NAVEGACION */
+  .navigation{
+    align-items: center;
+    width: 100%;
+  }
+
+
+  /* NOSOTROS */
+  .more-info {
+    height: 30px;
+  }
+
+  /* COMO-COMPRAR MOBILE VERSION */
+  #entre-secciones {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #entre-secciones div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #entre-secciones img {
+    height: 58px;
+  }
+
+  #entre-secciones h2 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  #page-description {
+    justify-content: center;
+  }
+
+  /* NOSOTROS / ABOUT US*/
+
+  .page-aboutUs-text {
+    text-align: center;
+  }
+
+  .aboutUs-img {
+    display: none;
+  }
+
+  /* CONTACT FORM */
+
+  #container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container-form form .campo {
+    width: 70%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    outline: 0px;
+  }
+
+  #container-form textarea {
+    width: 70%;
+    height: 270px;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+  }
+
+  /* PRODUCTOS */
+  aside{
+    width: 470px;
+  }
+}

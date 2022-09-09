@@ -1,0 +1,60 @@
+
+.container-xl h1{
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 0.30em 0;
+}
+.container-xl input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #E9D431;
+  border-color: black;
+  border-radius: 0px;
+}
+
+.container-xl textarea{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #E9D431;
+  border-color: black;
+  border-radius: 0px;
+}
+
+#FormControlInput1{
+  background-color: #E9D431;
+  padding: 2px;
+  font-weight: bold;
+}
+
+#FormControlInput2{
+  background-color: #E9D431;
+  padding: 2px;
+  font-weight: bold;
+}
+
+#FormControlTextarea1{
+  background-color: #E9D431;
+  padding: 2px;
+  font-weight: bold;
+}
+
+.container-xl{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  background-color: #E9D431;
+}
+
+.container-xl button{
+  font-weight: bold;
+  background: #4a4311;
+  font-size: 110%;
+  color: #E9D431;
+  border: none;
+}
+
+.container-xl button:hover{
+  background-color: black;
+}

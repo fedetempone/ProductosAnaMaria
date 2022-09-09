@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos Ana María</title>
+
+  <!-- LINKEO DE FUENTES ICONOS ETC -->
+    
+    <link rel="icon" href="./favicon/nuez.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"/>     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://kit.fontawesome.com/fadc21d84a.js" crossorigin="anonymous"></script> -->
+
+  <!-- LINKEO DE ARCHIVOS -->
+
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <!-- <link rel="stylesheet" href="css/article.css"> -->
+    <link rel="stylesheet" href="./themes/default/default.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="./css/mini-mobile.css">
+
+  </head>
+
+  <!--  SECCION NAV BAR  -->
+  <body>
+
+    <div class="whatsapp-button">
+      <a href="https://wa.me/1130607355?text=Me%20gustaría%20hacerte%20un%20pedido%20" class="whatsapp" target="_blank"> 
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
+    </div>
+  
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="index.html" class="logo"> 
+          <img class="img-logo hvr-bounce-out" src="./img/logos/productosanamaria.png" alt="productosanamarialogo" />
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img class="close-icon" src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./como-comprar.html">Comprar</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./contact-form.html">Contacto</a></li>
+          <li class="navbar-shopping-cart">
+            <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
+            <div>0</div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECCION PRODUCTOS -->
+    <aside id="productDetail" class="inactive">
+      <div class="product-detail-close">
+        <img src="./icons/icon_close_black.png" alt="close">
+      </div>
+      <img id="product-detail-image" alt="">
+      <div class="product-detail-info">
+        <p id="product-detail-price"></p>
+        <p id="product-detail-name"></p>
+        <p id="product-detail-description"></p>
+        <button class="primary-button add-to-cart-button">
+          <img src="./icons/bt_add_to_cart.svg" alt="add to cart">
+          Add to cart
+        </button>
+      </div>
+    </aside>
+
+    <section id="main-container">
+      
+        <div class="cards-container">
+        </div> 
+    </section>
+
+    
+ 
+
+  <!-- SECCION NAVEGACION -->
+  <section id="sobre-nosotros-contact-form">
+    <div class="navigation-contact-form">
+      <h1>Navegación</h1>
+      <ul>
+        <li><a href="./index.html">Inicio</li></a>
+        <li><a href="./como-comprar.html">¿ Como Comprar ?</li></a>
+        <li><a href="./nosotros.html">¿ Quienes Somos ?</li></a>
+        <li><a href="./contact-form.html">Contacto</li></a>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="final">© Copyrigth 2022 fedetempone</footer>
+
+  <!-- SECCION JAVASCRIPT -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>  <!-- NIVO SLIDER -->
+  <script src="js/jquery-3.1.1.min.js"></script> <!-- NIVO SLIDER -->
+  <script src="./js/jquery.nivo.slider.js"></script> <!-- NIVO SLIDER -->
+  <script src="js/app.js"></script> <!-- TOGGLE NAVBAR -->
+  <script type="text/javascript"> // TOGGLE NAVBAR
+      $(window).on('load', function() { 
+          $('#slider').nivoSlider(); 
+        }); 
+        </script>
+    
+  <script src="./js/products.js"></script>
+
+
+  </body>
+</html>
+
+<!-- conectar a git https://platzi.com/clases/3271-javascript-practico/51016-conectando-github-a-proyectos-de-javascript/ -->

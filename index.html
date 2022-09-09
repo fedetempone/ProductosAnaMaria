@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos Ana María</title>
+
+  <!-- LINKEO DE FUENTES ICONOS ETC -->
+    
+    <link rel="icon" href="./favicon/nuez.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- LINKEO DE ARCHIVOS -->
+
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <!-- <link rel="stylesheet" href="css/article.css"> -->
+    <link rel="stylesheet" href="./themes/default/default.css">
+
+  </head>
+
+  <!-- ↓↓ SECCION NAV BAR ↓↓ -->
+  <body>
+
+    <div class="whatsapp-button">
+      <a href="https://wa.me/1130607355?text=Me%20gustaría%20hacerte%20un%20pedido%20" class="whatsapp" target="_blank"> 
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
+    </div>
+  
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="index.html" class="logo"> 
+          <img class="img-logo hvr-bounce-out" src="./img/logos/productosanamaria.png" alt="productosanamarialogo" />
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img class="close-icon" src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./contact-form.html">Contacto</a></li>
+          <li class="navbar-shopping-cart">
+            <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
+            <div>0</div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- SECCION BANNER -->
+    <section id="hero">
+      <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">     
+            <img src="./img/banner/banner6.jpg" alt="frutos secos" />    
+            <img src="img/banner/banner7.1.jpg" />    
+            <img src="img/banner/banner-aceite4.2.jpg" alt="" />     
+            <img src="img/banner/banner4.3.jpg" alt="" />     
+            <img src="img/banner/banner8.2.jpg" alt="" />     
+          </div> 
+      </div>
+    </section>
+
+  <!-- SECCION ARTICLE  -->
+
+    <section id="productos" >
+      <div  id="promos">
+        <a href="#"><img class="promo-mobile hvr-buzz" src="./img/article/promos.1.png" alt=""></a>
+      </div>
+      <div id="article">
+        <a href=""><img class="mobile-products hvr-buzz" src="./img/article/aceites.1.png" alt=""></a>       
+        <a href=""><img class="mobile-products hvr-buzz" src="./img/article/frutos-secos.1.png" alt=""></a>       
+        <a href=""><img class="mobile-products hvr-buzz" src="./img/article/otros-productos.1.png" alt=""></a>
+      </div>  
+    </section>
+
+  <!-- SECCION LOGO FOOTER  -->
+  <section id="logo-footer">
+    <div class="logoFooter ">
+      <img class="hvr-bounce-out" src="./img/logos/productosanamaria.png" alt="">
+    </div>
+    <div class="redes-footer">
+      <a href="#" class="instagram">
+        <img class="animated infinite heartBeat" src="./img/instagram.png" alt="">
+      </a>
+      <a href="#" class="facebook">
+        <img class="animated infinite heartBeat" src="./img/facebook.png" alt="">
+      </a>
+    </div>
+  </section>
+
+  
+
+  <!-- SECCION NOSOTROS -->
+  <section id="sobre-nosotros">
+    <div class="nosotros">
+      <h1>
+        Sobre Nosotros
+      </h1>
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut id atque saepe perferendis blanditiis obcaecati officia molestiae repudiandae assumenda debitis maxime alias nobis, ipsa vel vero sint porro dolorem.
+      </h2>
+      <button class="more-info" onclick="window.location.href='./nosotros.html'">Más Info...</button>
+    </div>
+    <div class="navigation">
+      <h1>Navegación</h1>
+      <ul>
+        <li><a href="#hero">Inicio</li></a>
+        <li><a href="./como-comprar.html">Como Comprar</li></a>
+        <li><a href="./contact-form.html">Contacto</li></a>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="final">© Copyrigth 2022 fedetempone</footer>
+
+  <!-- SECCION JAVASCRIPT -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery.nivo.slider.js"></script>
+  
+    <script type="text/javascript"> 
+      $(window).on('load', function() {
+          $('#slider').nivoSlider(); 
+      }); 
+    </script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>

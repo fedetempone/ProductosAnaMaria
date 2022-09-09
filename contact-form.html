@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos Ana María</title>
+
+  <!-- LINKEO DE FUENTES ICONOS ETC -->
+    
+    <link rel="icon" href="./favicon/nuez.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fadc21d84a.js" crossorigin="anonymous"></script>
+
+  <!-- LINKEO DE ARCHIVOS -->
+
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <!-- <link rel="stylesheet" href="css/article.css"> -->
+    <link rel="stylesheet" href="./themes/default/default.css">
+    <link rel="stylesheet" href="./css/mini-mobile.css">
+
+  </head>
+
+  <!--  SECCION NAV BAR  -->
+  <body>
+
+    <div class="whatsapp-button">
+      <a href="https://wa.me/1130607355?text=Me%20gustaría%20hacerte%20un%20pedido%20" class="whatsapp" target="_blank"> 
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
+    </div>
+  
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="index.html" class="logo"> 
+          <img class="img-logo hvr-bounce-out" src="./img/logos/productosanamaria.png" alt="productosanamarialogo" />
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img class="close-icon" src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./contact-form.html">Contacto</a></li>
+          <li class="navbar-shopping-cart">
+            <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
+            <div>0</div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECCION FORMULARIO DE CONTACTO -->
+    <section id="container-form">
+      <div class="info-form">
+          <h2>Contáctanos</h2>
+          <h3>Trabajamos por pedidos. <br> Nuestro horario de atencion es de Lunes a Viernes de 09:00 a 18hs, ante consultas o sugerencias dejanos tu mensaje. Gracias !</h3>
+          <a href=""><i class="fa-brands fa-instagram"></i> Seguinos en Instagram</a>
+          <a href=""><i class="fa-brands fa-facebook"></i> Seguinos en Facebook </a>
+          <a href=""><i class="fa fa-phone"></i> 1130607355</a>
+          <a href=""><i class="fa fa-envelope"></i> productosanamaria@gmail.com</a>
+      </div>
+      
+      <form action="#" method="post" id="form" autocomplete="on">
+          <input type="text" id="FormControlInput1" name="nombre" placeholder="Tu Nombre" class="campo" required>
+          <p class="alertas" id="alertas-names"></p>
+          <input type="email" id="FormControlInput2" name="email" placeholder="Tu Email" class="campo" required>
+          <p class="alertas" id="alertas-email"></p>
+          <textarea id="FormControlTextarea1" name="mensaje" placeholder="Tu Mensaje..." required></textarea>
+          <p class="alertas" id="alertas-msg"></p>
+          <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+      </form>
+      
+    </section>
+
+    <!-- SECCION LOGO FOOTER -->
+    <section id="logo-footer">
+        <div class="logoFooter ">
+          <img class="hvr-bounce-out" src="./img/logos/productosanamaria.png" alt="">
+        </div>
+        <div class="redes-footer">
+          <a href="#" class="instagram">
+            <img class="animated infinite heartBeat" src="./img/instagram.png" alt="">
+          </a>
+          <a href="#" class="facebook">
+            <img class="animated infinite heartBeat" src="./img/facebook.png" alt="">
+          </a>
+        </div>
+      </section>
+ 
+
+  <!-- SECCION NAVEGACION -->
+  <section id="sobre-nosotros-contact-form">
+    <div class="navigation-contact-form">
+      <h1>Navegación</h1>
+      <ul>
+        <li><a href="index.html">Inicio</li></a>
+        <li><a href="como-comprar.html">¿ Como Comprar ?</li></a>
+        <li><a href="nosotros.html">¿ Quienes Somos ?</li></a>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="final">© Copyrigth 2022 fedetempone</footer>
+
+  <!-- SECCION JAVASCRIPT -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>  <!-- NIVO SLIDER -->
+    <script src="js/jquery-3.1.1.min.js"></script> <!-- NIVO SLIDER -->
+    <script src="./js/jquery.nivo.slider.js"></script> <!-- NIVO SLIDER -->
+    <script src="js/app.js"></script> <!-- TOGGLE NAVBAR -->
+    <script type="text/javascript"> // TOGGLE NAVBAR
+      $(window).on('load', function() { 
+          $('#slider').nivoSlider(); 
+      }); 
+    </script>
+    
+    <script src="js/validation-form.js"></script> <!-- VALIDACION DE FORMULARIO DE CONTACTO -->
+
+
+  </body>
+</html>

@@ -1,0 +1,41 @@
+@media (min-width: 950px)  {
+
+    .article{
+        flex-wrap: wrap;
+    }
+
+    #promos img{
+        height: 262px;
+        width: 746px;
+    }
+        
+    #article img{
+        height: 230px;
+        width: 242px;
+        padding: 20px;
+        border-radius: 40px;
+        background: url(2);
+    }
+
+    #entre-secciones img{
+        height: 58px;
+      }
+
+      /*products*/
+
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, 160px);
+      }
+    .product-card {
+        width: 140px;
+      }
+    .product-card img {
+        width: 140px;
+        height: 140px;
+      }
+
+    aside {
+        width: 746px;
+    }
+  
+}

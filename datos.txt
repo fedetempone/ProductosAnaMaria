@@ -1,0 +1,12 @@
+fuente
+designevo.com color letra EDO SZ color fondo navbar #2d3136
+color para volver atras quienes somos contacto etc background: rgba(48, 36, 33, 0.03)
+olivadonmateo
+defrutassecas
+gruposalute
+nuecesmochue
+
+nav bar responsive https://www.youtube.com/watch?v=xQstBIPeOdU
+https://www.youtube.com/watch?v=evmIDSRlrGE slider automatico
+efectos de animaciones hover https://ianlunn.github.io/Hover/
+efectos de animaciones hover https://www.enriquejros.com/efectos-imagenes-css/

@@ -1,0 +1,81 @@
+#page-description{
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 2.5em;
+    padding: 35px;
+}
+
+.description-text-color{
+    color: black;
+}
+.description-text-color-2{
+    color: orange;
+}
+
+
+.go-back-link img{
+    height: 100px;    
+}
+
+#entre-secciones {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 516px;
+    margin: auto;
+    padding: 10px 0px;
+    gap: 170px;
+}
+
+#entre-secciones div{
+    display: flex;
+    padding: 0px 10px;
+}
+
+#entre-secciones img:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition: all 0.5s;
+}
+
+#entre-secciones h2 {
+    padding: 15px;
+}
+
+/* NOSOTROS */
+#page-aboutUs-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-aboutUs-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 27px;
+    padding: 20px;
+}
+
+.aboutUs-img{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.aboutUs-img img{
+    display: flex;
+    height: 303px;
+    width: 356px;
+    border-radius: 16px;  
+}
+

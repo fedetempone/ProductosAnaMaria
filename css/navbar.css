@@ -1,0 +1,142 @@
+@import url("mobile.css");
+@import url("article.css");
+@import url("desktop.css");
+@import url("logo-footer.css");
+@import url("footer.css");
+@import url("mini-mobile.css");
+@import url("contact.css");
+@import url("products.css");
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 117px;
+  background-color: #dbdbdb;
+}
+
+.topheader {
+  box-shadow: 0 4px 7px 0 rgb(0 0 0 / 42%);
+  position: fixed;
+  background-color: #ededed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;  
+}
+
+.img-logo{
+  height: 107px;
+  width: 135px;
+}
+
+.hvr-bounce-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.hvr-bounce-out:hover, .hvr-bounce-out:focus, .hvr-bounce-out:active {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+  
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li {
+  padding: 0 15px;
+}
+
+.menu a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 93px;
+  text-transform: uppercase;
+
+  position: relative;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+
+.menu a:hover{
+  color: #FFB74E;
+}
+
+.navbar-shopping-cart {
+  position: relative;
+  cursor: pointer;
+}
+.navbar-shopping-cart div {
+  width: 16px;
+  height: 16px;
+  background-color: var(--hospital-green);
+  border-radius: 50%;
+  font-size: var(--sm);
+  font-weight: bold;
+  position: absolute;
+  top: -6px;
+  right: -3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BOTON WHATSAPP FLOTANTE */
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100000 !important;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+
+.whatsapp:hover {transition:all .3s; transition-duration: 1s;  filter: opacity(.5);}
+
+

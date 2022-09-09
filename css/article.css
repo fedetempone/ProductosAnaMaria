@@ -1,0 +1,70 @@
+@-webkit-keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+      
+    }
+    100% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+  @keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+  .hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+
+  .hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {    
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.45s;
+    animation-duration: 0.45s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  } 
+
+#promos {
+    display: flex;
+    justify-content: center;
+}
+
+#promos img{
+    border-radius: 18px;
+}
+
+#article{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#article img{
+    height: 184px;
+    width: 243px;
+    margin: 20px;
+    border-radius: 25px;
+}
+
+/* DISTINTAS ANIMACIONES PARA LAS FOTOS... ↓↓ DESCOMENTAR DE A 1 PARA PROBARLAS  */
+/* #productos img:hover{ */
+  /* transition:all .6s ease-in-out; */
+  /* filter: opacity(.5); */
+  /* filter: saturate(180%); */
+  /* filter: blur(5px); */
+/* } */
