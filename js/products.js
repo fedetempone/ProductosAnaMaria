@@ -1,10 +1,19 @@
 const cardsContainer = document.querySelector('.cards-container');
-//GET SHOPPING CART PRODUCTS DETAILS
+//GET CART'S OF PRODUCTS DETAILS
 const productDetails = document.querySelector('#productDetail');
 //GET CLOSEBUTTON OF THE SECTION PRODUCT DETAILS
 const closeButton = document.querySelector('.product-detail-close');
 closeButton.addEventListener('click', closeShowDetailsProducts);
-
+// GET SHOPPING CAR PRODUCTS
+const shopCar = document.querySelector('.product-shopCar'); //section product-shopCar (father)
+const myOrderContent = document.querySelector('.my-order-content'); //div second child of product-shopCar section (the first child is title-container)
+const shoppingCart = document.querySelector('.shopping-cart'); //div first child of my order content div
+// ICON FROM SHOPPING CART INSIDE OF THE NAVBAR
+const iconShopCar = document.querySelector('.navbar-shopping-cart');
+iconShopCar.addEventListener('click', showShopCar);
+// GET ARROW ICON FROM THE SHOP CAR
+const arrowIcon = document.querySelector('.arrow-shopCar');
+arrowIcon.addEventListener('click', closeShoppingCar);
 
 
 const productList = [];
@@ -115,6 +124,8 @@ for (product of arr){
    //<img src="./icons/bt_add_to_cart.svg" alt="">
    const productFigureImg = document.createElement('img');
    productFigureImg.setAttribute('src', './icons/bt_add_to_cart.svg');
+   productFigureImg.addEventListener('click', addProductToShoppingCar);
+   productFigureImg.idOf_figureImage = product.id;
 
    cardsContainer.appendChild(productCard);
    productCard.appendChild(productImage);
@@ -157,4 +168,51 @@ function showProductDetails(event){
     });
 }
 
+function showShopCar(){
+    shopCar.classList.toggle('inactive');
+}
 
+function addProductToShoppingCar(event){
+    const idOf_figureImage = event.currentTarget.idOf_figureImage;
+    const product = productList.find(product => product.id == idOf_figureImage);
+    if (product === undefined) {
+        return;
+    } 
+    shopCar.classList.remove('inactive');
+    const shopCar_figure = document.createElement('figure');
+    const img_shopcar_figure = document.createElement('img');
+    img_shopcar_figure.setAttribute('src', product.img);
+    const shoPcar_p_1 = document.createElement('p');
+    shoPcar_p_1.innerText = product.name;
+    const shoPcar_p_2 = document.createElement('p');
+    shoPcar_p_2.innerText = '$' + product.price;
+    const closeIconShopCar = document.createElement('img');
+    closeIconShopCar.setAttribute('src', './icons/icon_close.png');
+    closeIconShopCar.addEventListener('click', deletProductFromShoppingCart);
+    function deletProductFromShoppingCart(){
+        // myOrderContent.removeChild(shoppingCart);
+        // return addProductToShoppingCar(event);
+        while(shoppingCart.firstChild){
+            shoppingCart.removeChild(shoppingCart.firstChild);
+        }
+    }
+    
+    shoppingCart.appendChild(shopCar_figure);
+    shopCar_figure.appendChild(img_shopcar_figure);
+    shoppingCart.appendChild(shoPcar_p_1);
+    shoppingCart.appendChild(shoPcar_p_2);
+    shoppingCart.appendChild(closeIconShopCar);
+    
+    document.addEventListener("mouseup", function(event) {
+        if (!shopCar.contains(event.target)) {
+            shopCar.classList.add('inactive');
+        }
+    });
+    
+ 
+    
+}
+
+function closeShoppingCar(){
+   shopCar.classList.add('inactive');
+}
