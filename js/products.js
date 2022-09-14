@@ -1,7 +1,7 @@
 const cardsContainer = document.querySelector('.cards-container');
-//GET CART'S OF PRODUCTS DETAILS
+// GET CART'S OF PRODUCTS DETAILS
 const productDetails = document.querySelector('#productDetail');
-//GET CLOSEBUTTON OF THE SECTION PRODUCT DETAILS
+// GET CLOSEBUTTON OF THE SECTION PRODUCT DETAILS
 const closeButton = document.querySelector('.product-detail-close');
 closeButton.addEventListener('click', closeShowDetailsProducts);
 // GET SHOPPING CAR PRODUCTS
@@ -189,30 +189,28 @@ function addProductToShoppingCar(event){
     const closeIconShopCar = document.createElement('img');
     closeIconShopCar.setAttribute('src', './icons/icon_close.png');
     closeIconShopCar.addEventListener('click', deletProductFromShoppingCart);
-    function deletProductFromShoppingCart(){
-        // myOrderContent.removeChild(shoppingCart);
-        // return addProductToShoppingCar(event);
-        while(shoppingCart.firstChild){
-            shoppingCart.removeChild(shoppingCart.firstChild);
-        }
-    }
-    
+
     shoppingCart.appendChild(shopCar_figure);
     shopCar_figure.appendChild(img_shopcar_figure);
     shoppingCart.appendChild(shoPcar_p_1);
     shoppingCart.appendChild(shoPcar_p_2);
     shoppingCart.appendChild(closeIconShopCar);
-    
+
+    function deletProductFromShoppingCart(){
+        shoppingCart.removeChild(shopCar_figure);
+        shoppingCart.removeChild(shoPcar_p_1);
+        shoppingCart.removeChild(shoPcar_p_2);
+        shoppingCart.removeChild(closeIconShopCar);
+    }
+
     document.addEventListener("mouseup", function(event) {
         if (!shopCar.contains(event.target)) {
             shopCar.classList.add('inactive');
         }
     });
-    
- 
-    
 }
 
 function closeShoppingCar(){
    shopCar.classList.add('inactive');
 }
+
