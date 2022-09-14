@@ -15,7 +15,6 @@ iconShopCar.addEventListener('click', showShopCar);
 const arrowIcon = document.querySelector('.arrow-shopCar');
 arrowIcon.addEventListener('click', closeShoppingCar);
 
-
 const productList = [];
 productList.push({
     name: 'Aceite de Oliva Extra Virgen',
@@ -87,7 +86,6 @@ productList.push({
     id: 10,
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut id atque saepe perferendis blanditiis obcaecati officia molestiae repudiandae assumenda debitis maxime alias nobis, ipsa vel vero sint porro dolorem.'
 });
-
 
 function renderProducts(arr){
 for (product of arr){
@@ -214,3 +212,4 @@ function closeShoppingCar(){
    shopCar.classList.add('inactive');
 }
 
+//hola
