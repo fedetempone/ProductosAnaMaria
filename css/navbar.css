@@ -120,6 +120,17 @@ a {
 }
 
 .product-shopCar {
+  width: 45%;
+  height: 100vh;
+  padding: 24px;
+  box-sizing: border-box;
+  position: fixed;
+  background: #ffffff;
+  right: 0px;
+  top: 0px;
+  z-index: 99;
+}
+/* .product-shopCar {
   width: 360px;
   background: #ffffff;
   padding: 24px;
@@ -128,7 +139,7 @@ a {
   right: 31px;
   top: 128px;
   z-index: 9999999;
-}
+} */
 .title-container {
   display: flex;
 }
@@ -142,6 +153,18 @@ a {
   font-weight: bold;
 }
 .order {
+  display: flex;
+    flex-direction: row;
+    width: 83%;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 51px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+    padding: 0 24px;
+}
+/* .order {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 16px;
@@ -150,7 +173,7 @@ a {
   margin-bottom: 24px;
   border-radius: 8px;
   padding: 0 24px;
-}
+} */
 .order p:nth-child(1) {
   display: flex;
   flex-direction: column;
@@ -159,11 +182,16 @@ a {
   font-size: var(--md);
   font-weight: bold;
 }
-.order p:nth-child(2) {
+#parrafoCantidadTotal {
+      position: absolute;
+      font-weight: bold;
+      right: 10px;
+}
+/* .order p:nth-child(2) {
   text-align: end;
   font-weight: bold;
-}
-.shopping-cart {
+} */
+/* .shopping-cart {
   display: grid;
   grid-template-columns: auto 1fr auto auto;
   gap: 16px;
@@ -172,10 +200,26 @@ a {
   grid-auto-rows: 70px;
   height: 23em;
   overflow-y: scroll;
+} */
+
+.dataProducts{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+  grid-auto-rows: 70px;
+  height: 23em;
+  overflow-y: scroll;
 }
-.shopping-cart img{
+/* .shopping-cart img{
   cursor: pointer;
-  margin-right: 5px;
+  justify-self: end;
+} */
+.closeIcon{
+  margin-right: 20px;
+  cursor: pointer;
+  justify-self: end;
 }
 .shopping-cart figure {
   margin: 0;
@@ -189,8 +233,20 @@ a {
 .shopping-cart p{
   color: var(--md);
 }
-
-.primary-button {
+.checkout-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 90%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  position: absolute;
+  bottom: 15px;
+  height: 50px
+}
+/* .primary-button {
   background-color: var(--hospital-green);
   border-radius: 8px;
   border: none;
@@ -200,7 +256,16 @@ a {
   font-size: var(--md);
   font-weight: bold;
   height: 50px;
-}
+} */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+
 
 /* BOTON WHATSAPP FLOTANTE */
 .whatsapp {
@@ -223,6 +288,28 @@ a {
 
 .whatsapp:hover {transition:all .3s; transition-duration: 1s;  filter: opacity(.5);}
 
+.QuantityButton{
+  background-color: var(--hospital-green);
+  border: var(--hospital-green);
+  cursor: pointer;
+}
+
+.QuantityButton img{
+  height: 9px;
+  width: 9px;
+}
+
+.shoppingCarInput{
+  width: 12%;
+  height: 11px;
+  text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] { -moz-appearance:textfield; }
 
 /* @media (max-width: 640px) {
   .product-detail {
