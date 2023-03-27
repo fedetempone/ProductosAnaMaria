@@ -4,6 +4,8 @@ Pagina de Frutos Secos
 
 Proyecto de página web creada a modo de práctica, para fortalecer conocimientos en Javascript !
 
+***Aún Falta seguir Editando***
+
 ## Lenguajes y Herramientas ##
 
 Este proyecto está desarrollado con las siguientes tecnologías y herramientas de desarrollo:
